@@ -4,8 +4,11 @@ jobs:
   build-sample-echo:
     runs-on: ubuntu-latest
     steps:
-      - run: Testing is ok
-      - run: Building is Ok
-      - run: deployment is OK
+      - name: Test
+        run: echo  Testing is ok
+      - name: Build
+        run: echo  Building is Ok
+      - name: Deploy
+        run: echo deployment is OK
 
 
