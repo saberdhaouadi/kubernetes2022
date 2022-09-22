@@ -1,0 +1,14 @@
+name: build and test
+on: [push]
+jobs:
+  build-sample-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: echo  Testing is ok
+      - name: Build
+        run: echo  Building is Ok
+      - name: Deploy
+        run: echo deployment is OK
+
+
